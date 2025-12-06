@@ -1,0 +1,444 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Port+Lligat+Sans&display=swap");
+/* ---------------- FONTS ---------------- */
+:root {
+  --font-main: "Inter", sans-serif;
+  --font-title: "Playfair", serif;
+  --font-alt: "Port Lligat Sans", sans-serif;
+
+  --green: #27e768;
+  --dark: #0d0d0d;
+  --dark2: #141414;
+  --text: #cccccc;
+  --white: #ffffff;
+}
+
+/* ---------------- RESET ---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--dark);
+  color: var(--text);
+  font-family: var(--font-main);
+}
+
+/* ---------------- HEADER ---------------- */
+.header {
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--dark2);
+  border-bottom: 1px solid #222;
+}
+
+.logo {
+  font-family: var(--font-alt);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.logo:hover{
+  cursor: pointer;
+}
+
+.nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* المسافة تحت النص */
+  width: 0;      /* يبدأ من صفر */
+  height: 3px;
+  border-radius: 20px;
+  background-color: var(--green);
+  transition: width 0.5s;
+}
+
+.nav a:hover {
+  color: var(--green);
+}
+
+.nav a:hover::before {
+  width: 100%; /* يتوسع عند hover */
+}
+
+
+/* ---------------- MAIN ---------------- */
+main {
+  padding: 20px 40px;
+  min-height: calc(100vh - 80px);
+  display: grid;
+  gap: 30px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+
+/* ---------- Meal Details Page ---------- */
+
+.meal-details-card {
+  background: var(--dark2);
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 40px auto;
+  color: var(--text);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.meal-details-card img {
+  width: 500px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.meal-details-card .text-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.meal-details-card h2 {
+  color: var(--white);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.meal-details-card h3 {
+  color: var(--green);
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+
+.meal-details-card h4 {
+  color: var(--green);
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.meal-details-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.meal-details-card ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.meal-details-card ul li {
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+/* Buttons container inside meal-details-card */
+.meal-details-card .text-area > div {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Common button styles */
+.meal-details-card button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between text and icon */
+  color: #fff;
+}
+
+/* Youtube button */
+.meal-details-card button.youtube {
+  background-color: #FF0000;
+}
+
+.meal-details-card button.youtube:hover {
+  background-color: #cc0000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.4);
+}
+
+/* Source button */
+.meal-details-card button.source {
+  background-color: #555;
+}
+
+.meal-details-card button.source:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Icon inside button */
+.meal-details-card button i {
+  font-size: 1rem;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .meal-details-card .text-area > div {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .meal-details-card button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .meal-details-card {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .meal-details-card img {
+    width: 80%;
+    max-height: 350px;
+  }
+
+  .meal-details-card .text-area {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .meal-details-card {
+    padding: 15px;
+  }
+
+  .meal-details-card h2 {
+    font-size: 1.8rem;
+  }
+
+  .meal-details-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .meal-details-card h4 {
+    font-size: 0.95rem;
+  }
+
+  .meal-details-card p,
+  .meal-details-card ul li {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+
+
+/* ---------------- FOOTER ---------------- */
+.footer {
+  background: #111;
+  color: #ddd;
+  padding: 50px 20px 20px;
+  font-family: var(--font-main);
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-col {
+  flex: 1 1 250px;
+}
+
+.footer-col h3,
+.footer-col h4 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-col p {
+  line-height: 1.6;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #ff6b6b;
+}
+
+.footer-social {
+  margin-top: 10px;
+}
+
+.footer-social a {
+  color: #ddd;
+  margin-right: 12px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: #ff6b6b;
+}
+
+.footer-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-form input {
+  padding: 10px;
+  width: 70%;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.footer-form button {
+  padding: 10px 15px;
+  border: none;
+  background: #ff6b6b;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-form button:hover {
+  background: #ff4949;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid #222;
+  color: #999;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 1024px) {
+  main {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .sidebar {
+    position: relative;
+    top: 0;
+  }
+
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav a {
+    margin-left: 15px;
+    font-size: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .search-box {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .random-btn {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-info {
+    max-width: 100%;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-form {
+    flex-direction: column;
+  }
+
+  .footer-form input {
+    width: 100%;
+  }
+}

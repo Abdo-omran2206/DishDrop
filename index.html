@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DishDrop - Delicious Recipes</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header" data-aos="fade-down">
+      <h1 class="logo">DishDrop</h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="countries/index.html">Countries</a>
+        <a href="categories/index.html">Categories</a>
+        <a href="ingredients/index.html">Ingredients</a>
+        <a href="#Contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Main Content Area -->
+      <div class="main-content">
+        <!-- Hero Section -->
+        <section class="hero" data-aos="fade-up">
+          <h2>Discover Delicious Recipes Instantly</h2>
+          <div class="search-box">
+            <input
+              type="text"
+              placeholder="Search for a recipe..."
+              id="search"
+              onkeyup="buttonChange()"
+            />
+            <button class="random-btn" id="random-btn" onclick="Search()">
+              Random Dish
+            </button>
+          </div>
+        </section>
+
+        <!-- Featured Recipes Section -->
+        <section class="content">
+          <h2>Featured Recipes</h2>
+          <div id="content">
+            <!-- Recipes will be dynamically loaded here -->
+          </div>
+        </section>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <!-- Popular Recipes -->
+        <section class="populer-card" id="populer-card" data-aos="fade-up">
+          <!-- Popular recipes will be dynamically loaded here -->
+        </section>
+
+        <!-- Categories Section -->
+        <section class="Categories">
+          <h2>Categories</h2>
+          <div class="category-grid" id="categories-list">
+            <!-- Categories will be dynamically loaded here -->
+          </div>
+        </section>
+      </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="Contact" data-aos="fade-up">
+      <div class="footer-container">
+        <!-- Column 1: About -->
+        <div class="footer-col">
+          <h3>About DishDrop</h3>
+          <p>
+            Discover delicious meals, learn new recipes, and get inspired to
+            cook every day.
+          </p>
+
+          <div class="footer-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="countries/index.html">Countries</a></li>
+            <li><a href="categories/index.html">Categories</a></li>
+            <li><a href="ingredients/index.html">Ingredients</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Newsletter Form -->
+        <div class="footer-col">
+          <h4>Subscribe to Newsletter</h4>
+          <p>Get the latest recipes delivered straight to your inbox.</p>
+          <form class="footer-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 DishDrop. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

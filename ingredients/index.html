@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DishDrop - Ingredients</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" data-aos="fade-down">
+      <h1 class="logo" onclick="location.href='../index.html'">DishDrop</h1>
+      <nav class="nav">
+        <a href="../index.html">Home</a>
+        <a href="../countries/index.html">Countries</a>
+        <a href="../categories/index.html">Categories</a>
+        <a href="index.html">Ingredients</a>
+        <a href="#Contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="search-container">
+        <input
+          type="text"
+          id="ingredient-search"
+          placeholder="Search ingredients..."
+        />
+      </div>
+
+      <div id="ingredients-list" class="ingredients-list"></div>
+      <div id="pagination" class="pagination-container"></div>
+      <div class="content" id="content"></div>
+    </main>
+
+    <footer class="footer" id="Contact" data-aos="fade-up">
+      <div class="footer-container">
+        <!-- Column 1: About -->
+        <div class="footer-col">
+          <h3>DishDrop</h3>
+          <p>
+            Discover delicious meals, recipes, and cooking inspiration every
+            day.
+          </p>
+
+          <div class="footer-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Links -->
+        <div class="footer-col">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../countries/index.html">Countries</a></li>
+            <li><a href="../categories/index.html">Categories</a></li>
+            <li><a href="index.html">Ingredients</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Newsletter Form -->
+        <div class="footer-col">
+          <h4>Subscribe</h4>
+          <p>Join our newsletter to get the latest recipes.</p>
+          <form class="footer-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 DishDrop. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

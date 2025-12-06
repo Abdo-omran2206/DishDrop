@@ -1,6 +1,6 @@
 # 🍽️ DishDrop
 
-<img src="Logo.png" alt="DishDrop Logo" style="width: 150px; height: auto;">
+<img src="logo.png" alt="DishDrop Logo" style="width: 150px; height: auto;">
 
 **DishDrop** is a modern, responsive web application designed to help food enthusiasts discover, explore, and cook delicious recipes from around the world. Built with vanilla JavaScript and powered by TheMealDB API, DishDrop offers an intuitive interface for browsing thousands of recipes, ingredients, and cuisines.
 

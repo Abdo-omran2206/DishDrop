@@ -2,13 +2,7 @@
   <h1>🍽️ DishDrop</h1>
   <img src="logo.png" alt="DishDrop Logo" style="width: 250px; height: auto;">
 </div>
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white)](https://jquery.com/)
-[![AOS](https://img.shields.io/badge/AOS-2F80ED?style=flat&labelColor=gray)](https://michalsnik.github.io/aos/)
-[![Font Awesome](https://img.shields.io/badge/Font_Awesome-528DD7?style=flat&logo=fontawesome&logoColor=white)](https://fontawesome.com/)
-[![TheMealDB API](https://img.shields.io/badge/TheMealDB_API-FF0000?style=flat&logo=json&logoColor=white)](https://www.themealdb.com/api.php)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML) [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS) [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) [![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white)](https://jquery.com/) [![AOS](https://img.shields.io/badge/AOS-2F80ED?style=flat&labelColor=gray)](https://michalsnik.github.io/aos/) [![Font Awesome](https://img.shields.io/badge/Font_Awesome-528DD7?style=flat&logo=fontawesome&logoColor=white)](https://fontawesome.com/) [![TheMealDB API](https://img.shields.io/badge/TheMealDB_API-FF0000?style=flat&logo=json&logoColor=white)](https://www.themealdb.com/api.php)
 
 **DishDrop** is a modern, responsive web application designed to help food enthusiasts discover, explore, and cook delicious recipes from around the world. Built with vanilla JavaScript and powered by TheMealDB API, DishDrop offers an intuitive interface for browsing thousands of recipes, ingredients, and cuisines.
 

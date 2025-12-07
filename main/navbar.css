@@ -1,0 +1,116 @@
+/* ---------------- HEADER ---------------- */
+.header {
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--dark2);
+  border-bottom: 1px solid #222;
+}
+
+/* Logo */
+.logo {
+  font-family: var(--font-alt);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--green);
+}
+.logo:hover {
+  cursor: pointer;
+}
+
+/* Nav Links */
+.nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  margin-left: 25px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  border-radius: 20px;
+  background-color: var(--green);
+  transition: width 0.5s;
+}
+
+.nav a:hover {
+  color: var(--green);
+}
+
+.nav a:hover::before {
+  width: 100%;
+}
+
+/* Default: hide toggle on desktop */
+#toggle {
+  display: none;
+}
+
+/* ---------------- RESPONSIVE NAVBAR ---------------- */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    order: 1;
+  }
+
+  #toggle {
+    font-size: 34px;
+    display: block;
+    order: 2;
+    cursor: pointer;
+  }
+
+  .nav {
+    display: none; /* Initially hidden, toggled by JS */
+    width: 100%;
+    margin-top: 20px;
+    order: 3;
+    text-align: center;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav li {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .nav a {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-left: 0; /* Reset margins from desktop if any leak */
+    margin-bottom: 15px;
+  }
+
+  .nav a::before {
+    bottom: -5px;
+  }
+}

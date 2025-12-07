@@ -19,8 +19,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../main/navbar.css" />
+    <link rel="stylesheet" href="../main/footer.css" />
+    <link rel="stylesheet" href="../mobileview/mobile.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="icon" href="../logo.png" type="image/png">
+    <link rel="icon" href="../logo.png" type="image/png" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
@@ -28,12 +31,15 @@
     <header class="header" data-aos="fade-down">
       <h1 class="logo" onclick="location.href='../index.html'">DishDrop</h1>
       <nav class="nav">
-        <a href="../index.html">Home</a>
-        <a href="../countries/index.html">Countries</a>
-        <a href="index.html">Categories</a>
-        <a href="../ingredients/index.html">Ingredients</a>
-        <a href="#Contact">Contact</a>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../countries/index.html">Countries</a></li>
+          <li><a href="index.html">Categories</a></li>
+          <li><a href="../ingredients/index.html">Ingredients</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
       </nav>
+      <i class="fa fa-bars toggle" id="toggle"></i>
     </header>
 
     <main>
@@ -88,5 +94,6 @@
       </div>
     </footer>
     <script src="main.js"></script>
+    <script src="../mobileview/mobile.js"></script>
   </body>
 </html>

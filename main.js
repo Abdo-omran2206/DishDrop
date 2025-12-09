@@ -142,7 +142,7 @@ async function Search() {
     location.href = `MealDetails/index.html?mealId=${meal[0].idMeal}`;
   } else {
     // page search
-    location.href = `search/index.html?query=${searchText}`;
+    location.href = `Search/index.html?query=${searchText}`;
   }
 }
 

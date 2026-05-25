@@ -328,7 +328,7 @@ main {
   }
 
   .card {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
   }
 

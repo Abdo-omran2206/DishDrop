@@ -200,6 +200,9 @@ main {
     width: 100%;
     border-radius: 6px;
   }
+  .featured-sec {
+    width: 100%;
+  }
 
   .card {
     flex-direction: column;
